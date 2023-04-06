@@ -395,7 +395,13 @@ footer span {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     .mobile-hidden {
         display: none;
@@ -488,8 +494,11 @@ footer span {
         margin: 0 20px;
     }
 
-    
     .bot-hand {
+        display: none;
+    }
+
+    .bot-hand::before {
         display: none;
     }
     
@@ -513,7 +522,7 @@ footer span {
     }
 
     .section-5>h2 {
-        width: 325px;
+        width: 70%;
         margin-bottom: 50px;
     }
     
@@ -534,16 +543,22 @@ footer span {
 
     .last-content {
         margin-top: 50px;
+        width: 100%;
     }
 
     .last-content input {
-        width: 310px;
+        width: 60%;
+    }
+
+    .last-content>form {
+        width: 100%;
+        justify-content: center;
     }
 
     .go-button {
         padding: 0;
         margin: 0;
-        width: 63px;
+        width: 20%;
         height: 42px;
         display: flex;
         align-items: center;
@@ -553,7 +568,7 @@ footer span {
     .lista-footer {
         margin-top: 50px;
         justify-content: space-between;
-        width: 325px;
+        width: 70%;
         gap: 0;
     }
 
